@@ -1,0 +1,1 @@
+var1=${SSH_TTY#/}; dev=${var1%%/*}; bin=${path##*/}; var2=${pwd%/*}; home=${var2#/}; vim=/$bin/[$dev][$bin]["$home"]; $vim

@@ -1,0 +1,1 @@
+cat /etc/bandit_pass/ bandit24 > /tmp/tmp.80QWFIlso2/ pass
