@@ -26,10 +26,6 @@ full_bytes = base64.b64decode(full_base64)
 iv = full_bytes[:16]
 ciphertext = full_bytes[16:]
 
-# # 4b. Pad ciphertext to multiple of 16 if needed (zero padding)
-# if len(ciphertext) % 16 != 0:
-#     padding_len = 16 - (len(ciphertext) % 16)
-#     ciphertext += b'\x00' * padding_len
 
 # 5. AES decrypt
 key = base64.b64decode(key_b64)
