@@ -10,6 +10,7 @@
             dir(object) e setattribute()
             herança -> herdar de string ou outro builtin que tenha __str__
             criar um objeto  e mudar o __str__ usando setaatr(obj, dir(myclass)[index-__str__], new_implementation)
+            era exatamente isso :)
             profit
         
 

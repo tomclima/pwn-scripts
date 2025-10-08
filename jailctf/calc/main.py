@@ -6,8 +6,6 @@ from re import match
 
 def safe_eval(exit, code):
     def hook(*a):
-        print("nono")
-        print(*a)
         exit(0)
     def disabled_exit(*a):
         pass
@@ -17,10 +15,6 @@ def safe_eval(exit, code):
 
     def dummy():
         pass
-
-
-
-    code = "(type('').mro()[1])"
 
     dummy.__code__ = compile(code, "<code>", "eval")
     print("Activating audit hook...")

