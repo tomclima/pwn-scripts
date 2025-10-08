@@ -9,6 +9,8 @@ I use this template for my post mortem challenge notes
 - challenge: []() 
 - summary:
 - reminder:
+|
+----------------------
 ```
 
 # Notes
