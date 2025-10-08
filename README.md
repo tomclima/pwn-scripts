@@ -5,8 +5,8 @@ these are CTF scripts that I developed during my cybersecurity studies. each one
 ## template
 I use this template for my post mortem challenge notes
 ```
-challenge: 
-link: 
+ctf: []()
+challenge: []() 
 summary:
 reminder:
 ```
