@@ -2,6 +2,10 @@
 
 these are CTF scripts that I developed during my cybersecurity studies. each one is assciated with the source of the problem I needed to solve
 
+## Now upsolving
+[backdoor](qnq2025/backdoor/notes.md)
+rev challenge with stripped binary
+
 ## template
 I use this template for my post mortem challenge notes
 ```
