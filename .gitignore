@@ -1,5 +1,6 @@
 # Ignore all hidden files
 .*
+node_modules/
 
 # But do not ignore .gitignore
 !.gitignore
