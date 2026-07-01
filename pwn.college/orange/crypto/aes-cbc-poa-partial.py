@@ -1,27 +1,31 @@
 from Crypto.Cipher import AES
 from Crypto.Util.strxor import strxor
-from pwn import process
+from Crypto.Util.Padding import unpad
+from Crypto.Random import get_random_bytes
 
-chall = process("/challenge/worker")
-data = ""
-block_size = 16
-iv, ciphertext = bytes.fromhex(data)[:16], bytes.fromhex(data)[16:]
+import time
+import sys
+from pwn import *
 
-i = 1
-while i <= 16:
-    found = False
+
+
+worker = process("/challenge/worker")
+
+start_iv = b"\x00"*16
+start_message = b"\x00"*16
+worker.recvline()
+# get one byte
+values = []
+for i in range(0, 256):
+
+    new_iv = start_iv[:-1] + int.to_bytes(i,1, 'little')
+    new_payload = b"TASK: " + (new_iv + start_message).hex().encode()
+    print(new_payload)
+    worker.sendline(new_payload)
     
-    for j in range(256):
-        if chall.sendline(strxor(bytes(j), bytes(ciphertext[16 -i]))) != b"Error":
-            for k in range
-            
+    oracle = worker.recvline()
+    if(oracle[:5] == b'Error'):
+        print("test")
 
-    
-    
-
-    
-
-
-
-
+worker.interactive()
 
