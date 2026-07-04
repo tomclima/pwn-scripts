@@ -4,7 +4,7 @@ import subprocess
 
 parent = pathlib.Path(__file__).resolve().parent
 
-scriptname = "aes-cbc-poa-partial.py"
+scriptname = "aes-cbc-poa-encrypt.py"
 username = "hacker"
 remote = "pwn.college"
 filepath = pathlib.Path(f"/home/hacker/crypto/{scriptname}")
